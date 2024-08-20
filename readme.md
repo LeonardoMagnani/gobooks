@@ -28,28 +28,29 @@ O projeto é dividido em duas camadas principais:
 
 1.  **Clone o repositório:**
             
-    `git clone https://github.com/seu-usuario/gobooks.git
-    cd gobooks` 
+    `git clone https://github.com/LeonardoMagnani/gobooks`
+    `cd gobooks` 
     
 2.  **Instale as dependências:**
-    
-    Use o Go Modules para instalar as dependências do projeto:
-            
+                
     `go mod tidy` 
     
 3.  **Execute o projeto:**
-    
-    Rode o projeto com o comando:
-    
-    `go run main.go` 
+        
+    `go run cmd/gobooks/main.go` 
     
     O servidor estará disponível em `http://localhost:8080`.
+
+4. **Utilizando os endpoints**
     
+    Importe a collection no Postman para facilitar a utilização dos endpoints.
+
+    `test/GoBooks.postman_collection.json` 
 
 ### Endpoints da API
 
 -   **GET /books**: Retorna uma lista de todos os livros.
 -   **POST /books**: Cria um novo livro.
--   **GET /books/{id}**: Retorna os detalhes de um livro específico pelo ID.
--   **PUT /books/{id}**: Atualiza as informações de um livro específico.
+-   **GET /books/{id}**: Retorna os detalhes de um livro pelo ID.
+-   **PUT /books/{id}**: Atualiza as informações de um livro.
 -   **DELETE /books/{id}**: Deleta um livro pelo ID.
